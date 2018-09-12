@@ -30,11 +30,11 @@ class ViewController: UIViewController {
     // 配置UI
     func configTestView() {
         languageLabel.frame = CGRect(x: 0, y: 100, width: SCREEN_WIDTH, height: 20)
-        languageLabel.text = getLanguageValue("testBtnTitle", comment: "")
+        languageLabel.text = keyString.common.testBtnTitle.commonStr()
         self.view.addSubview(languageLabel)
         
         switchButton.frame = CGRect(x: 0, y: 130, width: SCREEN_WIDTH, height: 30)
-        switchButton.setTitle(getLanguageValue("switch", comment: ""), for: .normal)
+        switchButton.setTitle(keyString.common.switchButton.commonStr(), for: .normal)
         switchButton.setTitleColor(UIColor.red, for: .normal)
         switchButton.addTarget(self, action: #selector(switchButtonClick), for: .touchUpInside)
         self.view.addSubview(switchButton)
@@ -52,16 +52,11 @@ class ViewController: UIViewController {
     
     // refresh
     func refeshContent() {
-        languageLabel.text = getLanguageValue("testBtnTitle", comment: "")
-        switchButton.setTitle(getLanguageValue("switch", comment: ""), for: .normal)
+        
+        languageLabel.text = keyString.common.testBtnTitle.commonStr()
+        switchButton.setTitle(keyString.common.switchButton.commonStr(), for: .normal)
     }
     
-    
-    //  中文 zh-Hans 英文 en
-    func getLanguageValue(_ key: String, comment: String) -> String {
-        return (Bundle.init(path: Bundle.main.path(forResource: String(format: "%@", UserDefaults.standard.object(forKey: appLanguage) as! CVarArg), ofType: "lproj")!)?.localizedString(forKey: key, value: "", table: nil))!
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -14,6 +14,7 @@
 		2719A6072148B7C200C90130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2719A6052148B7C200C90130 /* LaunchScreen.storyboard */; };
 		2719A6112148BA3E00C90130 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2719A6132148BA3E00C90130 /* Localizable.strings */; };
 		2719A6182148C11800C90130 /* LanguageLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719A6172148C11800C90130 /* LanguageLocalized.swift */; };
+		271FFE8F21492BCF00DB4BB7 /* keyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271FFE8E21492BCF00DB4BB7 /* keyString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2719A6152148BE0900C90130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		2719A6162148BE0900C90130 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2719A6172148C11800C90130 /* LanguageLocalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLocalized.swift; sourceTree = "<group>"; };
+		271FFE8E21492BCF00DB4BB7 /* keyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2719A6082148B7C200C90130 /* Info.plist */,
 				2719A6132148BA3E00C90130 /* Localizable.strings */,
 				2719A6172148C11800C90130 /* LanguageLocalized.swift */,
+				271FFE8E21492BCF00DB4BB7 /* keyString.swift */,
 			);
 			path = languageTest;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				2719A5FF2148B7C000C90130 /* ViewController.swift in Sources */,
 				2719A6182148C11800C90130 /* LanguageLocalized.swift in Sources */,
+				271FFE8F21492BCF00DB4BB7 /* keyString.swift in Sources */,
 				2719A5FD2148B7C000C90130 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
