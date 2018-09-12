@@ -47,19 +47,6 @@ class LanguageLocalized: NSObject {
         return  ""
     }
     
-    func currentLanguageForAuth() -> String {
-        let language = UserDefaults.standard.object(forKey: appLanguage)
-        if language is String {
-            let languageSymbol = language as! String
-            if languageSymbol == "zh-Hans" {
-                return "cn"
-            }
-            return languageSymbol
-        }
-        
-        return  ""
-    }
-    
     /// 是否是中文
     static var isChinese: Bool {
         return LanguageLocalized.shared.currentLanguage() == Language.Chinese.getShorthand()
