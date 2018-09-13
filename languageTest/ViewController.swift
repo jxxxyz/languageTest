@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         self.view.addSubview(languageLabel)
         
         switchButton.frame = CGRect(x: 0, y: 130, width: SCREEN_WIDTH, height: 30)
-        switchButton.setTitle(keyString.common.switchButton.commonStr(), for: .normal)
+        switchButton.setTitle(keyString.moduleOne.switchButton.moduleOneStr(), for: .normal)
         switchButton.setTitleColor(UIColor.red, for: .normal)
         switchButton.addTarget(self, action: #selector(switchButtonClick), for: .touchUpInside)
         self.view.addSubview(switchButton)
@@ -52,9 +52,8 @@ class ViewController: UIViewController {
     
     // refresh
     func refeshContent() {
-        
         languageLabel.text = keyString.common.testBtnTitle.commonStr()
-        switchButton.setTitle(keyString.common.switchButton.commonStr(), for: .normal)
+        switchButton.setTitle(keyString.moduleOne.switchButton.moduleOneStr(), for: .normal)
     }
     
     override func didReceiveMemoryWarning() {

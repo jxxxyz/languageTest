@@ -14,14 +14,22 @@ enum keyString {
         case switchButton = "switchButton"
         
         func commonStr() -> String {
-            switch self {
-                case .success: return getLang(string: self.rawValue)
-                case .testBtnTitle: return getLang(string: self.rawValue)
-                case .switchButton: return getLang(string: self.rawValue)
-            }
+            return getLang(string: self.rawValue)
+        }
+    }
+    
+    enum moduleOne: String {
+        case success = "success"
+        case testBtnTitle = "testBtnTitle"
+        case switchButton = "switchButton"
+        
+        func moduleOneStr() -> String {
+            return getLang(string: self.rawValue)
         }
     }
 }
+
+
 
 func getLang(string: String) -> String {
     return  getLanguageValue(string, comment:"")
